@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#a3b18a"
+    android:gravity="center"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoround"/>
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="57dp"
+            android:background="#D6D6D6"
+            android:hint="Username"
+            android:paddingLeft="10dp"
+            android:textColor="#515151"
+            android:padding="16dp"
+            android:layout_marginVertical="20dp"/>
+
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="57dp"
+            android:background="#D6D6D6"
+            android:hint="Password"
+            android:padding="16dp"
+            android:paddingLeft="10dp"
+            android:textColor="#515151"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Login"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#18322e"
+            android:layout_marginHorizontal="16dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
