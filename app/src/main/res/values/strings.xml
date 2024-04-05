@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyEarth</string>
+    <string name="navigator_text_1">Endecke den Schwarzwald auf spielerische Weise und trage gleichzeitig zum Umweldschutz bei!</string>
+    <string name="navigator_text_2">Bei unserer Schnitzeljagd besuchst du 5 Stationen im Schwarzwald, löst Quizfragen und Aufgaben zum Thema Biodiversität und Umweltschutz und sammelst Punkte. Mit genug Punkten gewinnst du ein Freibier!</string>
+    <string name="navigator_text_3">Also, worauf wartest du?</string>
+    <string name="first_station_text_1">Willkommen bei der ersten Station. Zu Anfang beginnen wir mit einer kleinen Stärkung. Aber nicht für uns, sondern für die vielen Vögel im Schwarzwald.</string>
+    <string name="first_station_text_2">Zu deiner Rechten befinden sich 5 Wasserschalen (stehen und hängen an Bäumen), welche als Vogelbäder funktionieren. Auf dem Boden findest du zudem 5 kleine Schalen, wo Insekten Trinken finden können.</string>
+    <string name="first_station_text_3">Da stehendes Wasser schnell gefährlich werden kann, ist es wichtig die Schale oft mit neuen Wasser zu versorgen. Tausche mit Hilfe des Brunnens (links von dir) einmal das Wasser in allen Schalen.</string>
+    <string name="first_station_text_4">Du erhälst 50 Punkte dafür!</string>
+    <string name="navigator_headline_1">LET\'S CREATE SOME</string>
+    <string name="navigator_headline_2">CHANGE!</string>
 </resources>
