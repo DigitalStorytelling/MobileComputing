@@ -18,5 +18,6 @@
     <string name="fith_station_text_2">Erhalte 100 Punkte nach beendigen der Aufgabe</string>
     <string name="fith_station_text_1">Helfe den Tieren im Schwarzwald, indem du einen kleinen Rückzugsbereich für kleinere Tiere baust. Das geht ganz einfach. Sammle ein wenig Laub und kleine Stöcke und häufe sie in einem Bereich im Wald zu einem kleinen Haufen.</string>
     <string name="motivation_text_1">Für 2.000 Punkte erwartet dich eine tolle Belohnung für deine Mühe! Am letzten Gasthof kannst du deine Punkte dann gegen ein Freibier (oder alkoholfreies Getränk deiner Wahl) eintauschen!</string>
-    <string name="motivation_text_2">Lade deine Freunde ein mitzumachen! \n So könnt ihr euch gegenseitig motivieren Punkte zu sammeln und gemeinsam den Schwarzwald erkunden.</string>
+    <string name="motivation_text_2">Lade deine Freunde ein mitzumachen!</string>
+    <string name="motivation_text_3">So könnt ihr euch gegenseitig motivieren Punkte zu sammeln und gemeinsam den Schwarzwald erkunden.</string>
 </resources>
