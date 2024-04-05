@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyEarth"
         tools:targetApi="31">
         <activity
+            android:name=".Motivation"
+            android:exported="false" />
+        <activity
             android:name=".FithStation"
             android:exported="false" />
         <activity

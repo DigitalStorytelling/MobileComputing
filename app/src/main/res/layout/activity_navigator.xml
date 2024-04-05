@@ -105,7 +105,7 @@
                 android:src="@drawable/beer" />
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/check_reward"
                 android:layout_width="290dp"
                 android:layout_height="62dp"
                 android:layout_marginStart="5dp"

@@ -42,6 +42,11 @@ public class Navigator extends AppCompatActivity {
             Intent intent = new Intent(Navigator.this, FithStation.class);
             startActivity(intent);
         });
+        Button checkReward = findViewById(R.id.check_reward);
+        checkReward.setOnClickListener(v -> {
+            Intent intent = new Intent(Navigator.this, Motivation.class);
+            startActivity(intent);
+        });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.navigator), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
