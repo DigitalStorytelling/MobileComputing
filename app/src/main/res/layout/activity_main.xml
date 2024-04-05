@@ -48,11 +48,9 @@
             android:layout_height="75dp"
             android:text="Login"
             android:layout_marginTop="32dp"
-            android:backgroundTint="#18322e"
+            android:backgroundTint="@color/darkgreen"
             android:layout_marginHorizontal="16dp"
             />
-
-
 
     </LinearLayout>
 

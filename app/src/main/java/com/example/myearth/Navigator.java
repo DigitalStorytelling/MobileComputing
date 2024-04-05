@@ -22,6 +22,26 @@ public class Navigator extends AppCompatActivity {
             Intent intent = new Intent(Navigator.this, FirstStation.class);
             startActivity(intent);
         });
+        Button secondStation = findViewById(R.id.button_second_station);
+        secondStation.setOnClickListener(v -> {
+            Intent intent = new Intent(Navigator.this, SecondStation.class);
+            startActivity(intent);
+        });
+        Button thirdStation = findViewById(R.id.button_third_station);
+        thirdStation.setOnClickListener(v -> {
+            Intent intent = new Intent(Navigator.this, ThirdStation.class);
+            startActivity(intent);
+        });
+        Button fourthStation = findViewById(R.id.button_fourth_station);
+        fourthStation.setOnClickListener(v -> {
+            Intent intent = new Intent(Navigator.this, FourthStation.class);
+            startActivity(intent);
+        });
+        Button fithStation = findViewById(R.id.button_fith_station);
+        fithStation.setOnClickListener(v -> {
+            Intent intent = new Intent(Navigator.this, FithStation.class);
+            startActivity(intent);
+        });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.navigator), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

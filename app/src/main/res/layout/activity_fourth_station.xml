@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".FourthStation"
+android:background="@color/lightgreen"
+android:padding="20dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="0dp">
+
+    <ImageView
+        android:id="@+id/img_station_1"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:gravity="top"
+        android:padding="0dp"
+        android:src="@drawable/station2" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="STATION 4: NUẞBACH"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Quiztime"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fourth_station_text"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="15dp"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="FRAGE 1:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="WIE WIRD DIE ANZAHL DER VERSCHIEDENEN ARTEN IN EINEM BESTIMMTEN GEBIET BEZEICHNET?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:gravity="start">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <RadioButton
+                android:id="@+id/radio_button_population"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Population" />
+
+            <RadioButton
+                android:id="@+id/radio_button_biomasse"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Biomasse" />
+
+            <RadioButton
+                android:id="@+id/radio_button_biodiversitaet"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Biodiversität" />
+
+            <RadioButton
+                android:id="@+id/radio_button_habitatvielfalt"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Habitatvielfalt" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="FRAGE 2:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="WELCHER DIESER FLÜSSE ENTSPRINGT IM SCHWARZWALD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:gravity="start">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <RadioButton
+                android:id="@+id/radio_button_rhein"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Rhein" />
+
+            <RadioButton
+                android:id="@+id/radio_button_donau"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Donau" />
+
+            <RadioButton
+                android:id="@+id/radio_button_main"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Main" />
+
+            <RadioButton
+                android:id="@+id/radio_button_oder"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Oder" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="FRAGE 3:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="WELCHE DIESER TIERISCHEN BEWOHNER SIND TYPISCH FÜR DEN SCHWARZWALD?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:gravity="start">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <RadioButton
+                android:id="@+id/radio_button_braunbaeren"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Braunbären" />
+
+            <RadioButton
+                android:id="@+id/radio_button_lcuhse"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Luchse" />
+
+            <RadioButton
+                android:id="@+id/radio_button_wildschweine"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Wildschweine" />
+
+            <RadioButton
+                android:id="@+id/radio_button_papageien"
+                android:layout_width="130dp"
+                android:layout_height="22dp"
+                android:text="Papageien" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/trash_to_points"
+        android:layout_width="351dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:text="Fertig!" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_gravity="start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/lightgreen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        android:padding="10dp" />
+
+</LinearLayout>
+
+</ScrollView>

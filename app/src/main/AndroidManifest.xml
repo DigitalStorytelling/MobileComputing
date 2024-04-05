@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyEarth"
         tools:targetApi="31">
         <activity
+            android:name=".FithStation"
+            android:exported="false" />
+        <activity
+            android:name=".FourthStation"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdStation"
+            android:exported="false" />
+        <activity
+            android:name=".SecondStation"
+            android:exported="false" />
+        <activity
             android:name=".FirstStation"
             android:exported="false" />
         <activity

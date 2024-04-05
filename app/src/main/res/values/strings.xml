@@ -7,6 +7,14 @@
     <string name="first_station_text_2">Zu deiner Rechten befinden sich 5 Wasserschalen (stehen und hängen an Bäumen), welche als Vogelbäder funktionieren. Auf dem Boden findest du zudem 5 kleine Schalen, wo Insekten Trinken finden können.</string>
     <string name="first_station_text_3">Da stehendes Wasser schnell gefährlich werden kann, ist es wichtig die Schale oft mit neuen Wasser zu versorgen. Tausche mit Hilfe des Brunnens (links von dir) einmal das Wasser in allen Schalen.</string>
     <string name="first_station_text_4">Du erhälst 50 Punkte dafür!</string>
+    <string name="second_station_text_1">Am Haus des Försters findet du Eimer, Müllzangen und eine Waage. Schnapp dir einen Eimer und eine Müllzange und ab in den Wald! Für 700g Müll bekommst du 500 Punkte gutgeschrieben.</string>
+    <string name="second_station_text_2">Die Punkte bekommst du, wenn du den Eimer auf die Waage am Försterhaus stellst (eine Kamera dient als Antischummelschutz) und den unteren Button klickst. Dein Punktekonto wird automatisch angepasst!</string>
+    <string name="second_station_text_3">Denke danach daran, den Müll in die dafür vorgesehenen Container zu entsorgen.</string>
+    <string name="third_station_text_1">Der Schwarzwald ist voller verschiedener Tierarten. Vielleicht ist dir das vorhin schon beim Wassertauschen aufgefallen, aber es gibt vor allem sehr viele Vogelarten. Entdecke die unterschiedlichen Arten hier.</string>
+    <string name="third_station_text_2">Für jede fotografierte Vogelart bekommst du 50 Punkte</string>
+    <string name="fourth_station_text">Du hast dir eine kleine Pause verdient. Setz dich auf eine Bank, genieße die Aussicht und nimm an dem folgenden Quiz teil. Jede reichtige Antwort bringt dir 50 Punkte! </string>
     <string name="navigator_headline_1">LET\'S CREATE SOME</string>
     <string name="navigator_headline_2">CHANGE!</string>
+    <string name="fith_station_text_2">Erhalte 100 Punkte nach beendigen der Aufgabe</string>
+    <string name="fith_station_text_1">Helfe den Tieren im Schwarzwald, indem du einen kleinen Rückzugsbereich für kleinere Tiere baust. Das geht ganz einfach. Sammle ein wenig Laub und kleine Stöcke und häufe sie in einem Bereich im Wald zu einem kleinen Haufen.</string>
 </resources>
