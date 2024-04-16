@@ -23,6 +23,7 @@
             android:src="@drawable/logoround"/>
 
         <EditText
+            android:id="@+id/username"
             android:layout_width="360dp"
             android:layout_height="57dp"
             android:background="#D6D6D6"
