@@ -39,18 +39,12 @@ public class MainActivity extends AppCompatActivity {
             String username = usernameField.getText().toString();
             UserProfile userProfile = userMap.get(username);
             if (userProfile != null) {
+                UserProfileManager.saveUserProfile(userProfile, this);
                 Intent intent = new Intent(MainActivity.this, Navigator.class);
-                intent.putExtra("userProfile", userProfile);
                 startActivity(intent);
             } else {
                 Toast.makeText(this, "Benutzername nicht gefunden", Toast.LENGTH_LONG).show();
             }
         });
-
-        /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });*/
     }
 }

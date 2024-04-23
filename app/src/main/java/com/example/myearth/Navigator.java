@@ -21,10 +21,9 @@ public class Navigator extends AppCompatActivity {
 
         welcomeText = findViewById(R.id.welcome_text);
 
-        UserProfile userProfile = (UserProfile) getIntent().getSerializableExtra("userProfile");
-        if (userProfile != null) {
-            welcomeText.setText("Hallo " + userProfile.getFirstName() + ",");
-        }
+        UserProfile userProfile = UserProfileManager.loadUserProfile(this);
+        welcomeText.setText("Hallo " + userProfile.getFirstName() + ",");
+
 
 
         Button firstStation = findViewById(R.id.button_first_station);
