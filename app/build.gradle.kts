@@ -38,4 +38,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation(libs.picasso)
+    implementation("com.github.Gruzer:simple-gauge-android:0.3.0")
 }

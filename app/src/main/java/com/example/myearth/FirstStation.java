@@ -23,10 +23,10 @@ public class FirstStation extends AppCompatActivity {
             Intent intent = new Intent(FirstStation.this, Navigator.class);
             startActivity(intent);
         });
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        Button increaseScoreButton = findViewById(R.id.water_changed);
+        increaseScoreButton.setOnClickListener(v -> {
+            UserProfileManager.updateScore(this, 50);
         });
     }
 }

@@ -25,4 +25,10 @@ public class UserProfileManager {
         int score = prefs.getInt(KEY_SCORE, 0);
         return new UserProfile(firstname, lastname, score);
     }
+
+    public static void updateScore(Context context, int increment) {
+        UserProfile userProfile = loadUserProfile(context);
+        userProfile.setScore(userProfile.getScore() + increment);
+        saveUserProfile(userProfile, context);
+    }
 }
