@@ -1,0 +1,16 @@
+{
+    "UserProfiles" :[
+        {
+            "username": "jba",
+            "firstName": "Janina",
+            "lastName": "Bach",
+            "score": 550
+        },
+        {
+            "username": "lsc",
+            "firstName": "Lena",
+            "lastName": "Scheit",
+            "score": 150
+        }
+    ]
+}

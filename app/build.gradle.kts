@@ -39,4 +39,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.picasso)
     implementation("com.github.Gruzer:simple-gauge-android:0.3.0")
+    //implementation("com.android.volley:volley:1.2.0")
+    //implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }
