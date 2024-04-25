@@ -17,6 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().permitAll().build()); // Not recommended for production; use AsyncTask or similar approaches
 
-        fetchUserProfiles();
+        loadJsonFromAssets();
 
         Button loginButton = findViewById(R.id.button_login);
         usernameField = findViewById(R.id.username);
@@ -53,19 +54,25 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void fetchUserProfiles() {
-        HttpURLConnection urlConnection = null;
+    private void loadJsonFromAssets() {
         try {
-            URL url = new URL("http://192.168.188.73/UserProfiles");
-            urlConnection = (HttpURLConnection) url.openConnection();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-            StringBuilder jsonResponse = new StringBuilder();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                jsonResponse.append(line);
-            }
+            InputStream is = getAssets().open("profiles.JSON");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            String json = new String(buffer, "UTF-8");
 
-            JSONObject jsonObject = new JSONObject(jsonResponse.toString());
+            JSONObject jsonObject = new JSONObject(json);
+            parseUserProfiles(jsonObject);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this, "Error loading local JSON", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void parseUserProfiles(JSONObject jsonObject) {
+        try {
             JSONArray profiles = jsonObject.getJSONArray("UserProfiles");
             for (int i = 0; i < profiles.length(); i++) {
                 JSONObject profile = profiles.getJSONObject(i);
@@ -76,13 +83,10 @@ public class MainActivity extends AppCompatActivity {
                 UserProfile userProfile = new UserProfile(firstName, lastName, score);
                 userMap.put(username, userProfile);
             }
+            Toast.makeText(MainActivity.this, "Profiles loaded!", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
-            Log.e("Error", "Failed to fetch user profiles", e);
-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Failed to fetch user profiles", Toast.LENGTH_LONG).show());
-        } finally {
-            if (urlConnection != null) {
-                urlConnection.disconnect();
-            }
+            e.printStackTrace();
+            Toast.makeText(MainActivity.this, "Error parsing JSON", Toast.LENGTH_LONG).show();
         }
     }
 }
