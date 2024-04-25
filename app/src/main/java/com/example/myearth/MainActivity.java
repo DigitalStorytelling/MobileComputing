@@ -1,26 +1,16 @@
 package com.example.myearth;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.squareup.picasso.Picasso;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import java.io.BufferedReader;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
@@ -83,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 UserProfile userProfile = new UserProfile(firstName, lastName, score);
                 userMap.put(username, userProfile);
             }
-            Toast.makeText(MainActivity.this, "Profiles loaded!", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(MainActivity.this, "Profiles loaded!", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(MainActivity.this, "Error parsing JSON", Toast.LENGTH_LONG).show();
